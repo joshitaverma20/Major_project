@@ -720,6 +720,7 @@ the website, in dark theme
 /*=============== FOOTER ===============*/
 .footer__container{
   row-gap: 3rem;
+  padding-left: 25rem;
 }
 
 .footer__logo{
@@ -732,6 +733,7 @@ the website, in dark theme
   letter-spacing: -1px;
   margin-bottom: var(--mb-2-5);
   transition: .3s;
+  padding-left: 15px;
 }
 
 .footer__logo-icon{
@@ -970,18 +972,25 @@ the website, in dark theme
     padding: 13rem 0 5rem;
   }
   .home__img{
-    width: 350px;
+    width: 500px;
+    margin-top: -190px;
+    margin-left: 120px;
   }
   .home__description{
     padding-right: 7rem;
   }
 
   .about__img{
-    width: 380px;
+    width: 460px;
+    margin-top: 60px;
+  }
+
+  .second {
+    width: 288px;
   }
 
   .steps__container{
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
   .steps__bg{
     padding: 3.5rem 2.5rem;
