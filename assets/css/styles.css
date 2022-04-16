@@ -716,60 +716,98 @@ the website, in dark theme
   font-size: var(--smaller-font-size);
   z-index: 10;
 }
-/*-- //footer logo --*/
 
-
-/*-- social icons --*/
-.footercopy-social ul li,
-.contact-left-footer ul li {
-    display: inline-block;
-}
-footer{
-    background: #191818;
-}
-.footercopy-social ul li a {
-    color: #333;
-    text-align: center;
+/*=============== FOOTER ===============*/
+.footer__container{
+  row-gap: 3rem;
 }
 
-.footercopy-social ul li a span.fa {
-    width: 20px;
-    font-size: 20px;
-    color: #666;
-    transition: 0.5s all;
-    -webkit-transition: 0.5s all;
-    -moz-transition: 0.5s all;
-    -o-transition: 0.5s all;
-    -ms-transition: 0.5s all;
+.footer__logo{
+  display: inline-flex;
+  align-items: center;
+  column-gap: .5rem;
+  color: var(--title-color);
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: -1px;
+  margin-bottom: var(--mb-2-5);
+  transition: .3s;
 }
 
-/*-- //social icons --*/
-
-/*-- address --*/
-.contact-left-footer ul li p span.fa {
-    color: #aaa;
+.footer__logo-icon{
+  font-size: 1.15rem;
+  color: var(--first-color);
 }
 
-.contact-left-footer ul li p a,
-.contact-left-footer ul li p {
-    color: #707579;
-    font-size: 16px;
-    font-weight: 600;
+.footer__logo:hover{
+  color: var(--first-color);
 }
 
-/*-- //address --*/
-
-/*-- copyright --*/
-.w3l-copy p {
-    letter-spacing: 1px;
+.footer__title{
+  font-size: var(--h3-font-size);
+  margin-bottom: var(--mb-1-5);
 }
 
-.w3l-copy p a {
-    color: #aaa;
+.footer__subscribe{
+  background-color: var(--first-color-lighten);
+  padding: .75rem;
+  display: flex;
+  justify-content: space-between;
+  border-radius: .5rem;
 }
-/*-- //copyright --*/
-/*-- //footer --*/
 
+.footer__input{
+  width: 70%;
+  padding: 0 .5rem;
+  background: none;
+  color: var(--text-color);
+  border: none;
+  outline: none;
+}
+
+.footer__button{
+  padding: 1rem;
+}
+
+.footer__data{
+  display: grid;
+  row-gap: .75rem;
+}
+
+.footer__information{
+  font-size: var(--small-font-size);
+}
+
+.footer__social{
+  display: inline-flex;
+  column-gap: .75rem;
+}
+
+.footer__social-link{
+  font-size: 1rem;
+  color: var(--text-color);
+  transition: .3s;
+}
+
+.footer__social-link:hover{
+  transform: translateY(-.25rem);
+}
+
+.footer__cards{
+  display: inline-flex;
+  align-items: center;
+  column-gap: .5rem;
+}
+.footer__card{
+  width: 35px;
+}
+
+.footer__copy{
+  text-align: center;
+  font-size: var(--smaller-font-size);
+  color: var(--text-color-light);
+  margin: 5rem 0 1rem;
+}
 /*=============== SCROLL UP ===============*/
 .scrollup{
   position: fixed;
